@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Review/static/css/main.353416a1.chunk.css",
+    "main.js": "/Review/static/js/main.7d19999c.chunk.js",
+    "main.js.map": "/Review/static/js/main.7d19999c.chunk.js.map",
+    "runtime-main.js": "/Review/static/js/runtime-main.174ca025.js",
+    "runtime-main.js.map": "/Review/static/js/runtime-main.174ca025.js.map",
+    "static/js/2.97bae1c7.chunk.js": "/Review/static/js/2.97bae1c7.chunk.js",
+    "static/js/2.97bae1c7.chunk.js.map": "/Review/static/js/2.97bae1c7.chunk.js.map",
+    "index.html": "/Review/index.html",
+    "precache-manifest.363ed5349ea4e91532c5b62aa279ab5d.js": "/Review/precache-manifest.363ed5349ea4e91532c5b62aa279ab5d.js",
+    "service-worker.js": "/Review/service-worker.js",
+    "static/css/main.353416a1.chunk.css.map": "/Review/static/css/main.353416a1.chunk.css.map",
+    "static/media/Navbar.css": "/Review/static/media/Logo_aligned.85e8cc9e.png",
+    "static/media/style.css": "/Review/static/media/background_landing.e5250e56.png",
+    "static/media/results.css": "/Review/static/media/map_big.c8429976.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.174ca025.js",
+    "static/js/2.97bae1c7.chunk.js",
+    "static/css/main.353416a1.chunk.css",
+    "static/js/main.7d19999c.chunk.js"
+  ]
+}
