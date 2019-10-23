@@ -1,0 +1,413 @@
+.area-container{
+    margin-top: 100px;
+}
+
+/* --------------- description start ----------- */
+
+.description {
+    margin: 2vh 6.25% 2vh 6.25%;
+}
+
+.description > h1 {
+    display: inline;
+    font-size: 2vw; /* incase calc isnt browser supported */
+    font-size: calc(16px + 2vw); /* the font-size is 16px + 2vw (this way it looks good in desktop and mobile */
+    padding-right: 2vw;
+}
+
+.known-for{
+    display: inline;
+    font-size: 1.2vw;
+    font-size: calc(8px + 1.2vw);
+}
+
+.known-for > span {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-left: 1px solid grey;
+}
+
+.description > p {
+    margin-top: 15px;
+}
+
+/* ---------- description end -------------- */
+
+/* -------------- object Overview -------------- */
+.obj-overview-content{
+    display: grid;
+    margin: 0 6.25% 0 6.25%; /*6.25% margin to line up with 16 grid system */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-column-gap: 1%;
+    grid-row-gap: 1vh;
+    height: 75vh;
+}
+
+.obj-overview-content h1{
+    font-size: 1.5vw;
+    font-size: calc(10px + 1.2vw);
+    margin: 1vh 1vw 1vh 1vw;
+}
+
+.obj-overview-content h2{
+    font-size: 1.2vw;
+    font-size: calc(10px + .6vw);
+    margin: 1vh 1vw 1vh 1vw;
+}
+
+.obj-overview-content > div{
+    border: 1px solid grey; /* Adds border to every child div (Every over-view content box) */
+    background: #F8F8F8;
+    padding: 1em; /* Adds padding to every child div (Every over-view content box) */
+}
+/* .location-overview-content > div:nth-child(odd){
+    background:#ddd;
+} */
+
+/* <------------------- Object Overview Pictures -----------------> */
+.obj-pictures {
+    grid-column: 1 / span 2; /* starts at grid line 1 and spans 2 grid lines*/
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+}
+
+#remove-style {
+    padding: 0;
+    border-style: none;
+}
+
+.obj-pictures > div{
+    background: white;
+}
+
+.overview-main-image{
+    grid-row: 1/4;
+}
+
+.obj-pictures > div{
+    cursor: pointer;
+}
+
+
+/* <------------------- Object Overview Pictures End -----------------> */
+
+/* <------------------ Object Review Overview ---------------> */
+.obj-review-overview {
+    /* height: 60vh; */
+    grid-column: 3;
+    grid-row: 1/3;
+    display: grid; /* inside of the review overview is a grid layout*/
+    grid-auto-rows: min-content; /* minimum height to fit all content */
+    grid-template-rows: auto auto auto 1fr; /*first three rows are auto (to fit content) and the last row takes the rest of the space */
+}
+
+.obj-review-overview > div {
+    margin: 1vh 1vw 1vh 1vw;
+}
+
+.star {
+    font-size: 1.2vw;
+    font-size: calc(8px + .6vw);
+    color: gold;
+    margin-left: .4vw;
+    text-align: center;
+}
+
+.obj-overview-rating > span {
+    font-size: 1.2vw;
+    font-size: calc(8px + .6vw);
+}
+
+.obj-overview-rating-allreviews{
+    float: right;
+    font-size: 1vw;
+    font-size: calc(6px + .6vw);
+}
+
+.obj-overview-list > li {
+    list-style-type: none;
+    padding: .5vh 0 .5vh 0;
+    width: 100%;
+    height: auto;
+}
+
+/* The below property changes the color of one of the overview reviews so the user
+knows what star of review they're looking at. Javascript will be used later to change
+what review is being looked at */
+div.active-review {
+    color: darkcyan;
+}
+
+.right-style {
+    width:auto;
+    height:100%;
+    background:white;
+    border: 1px solid black;
+    overflow:hidden;
+    text-align: center;
+}
+
+.left-style {
+    height:100%;
+    float:left;
+    margin-right: 1vw;
+}
+
+.left-style:hover {
+    cursor: pointer;
+}
+
+.five-overview-bar {
+    background-image: linear-gradient(120deg, rgb(63, 179, 255)  0%, blue 100%);
+    background-repeat: no-repeat;
+    background-size: 95% 100%;
+}
+
+.four-overview-bar{
+    background-image: linear-gradient(120deg, rgb(63, 179, 255) 0%, blue 100%); /*sets a gradient as the background of the div */
+    background-repeat: no-repeat; /*gradient takes full width without repeating */
+    background-size: 5% 100%;  /* background (gradient) take 5% width, 100% height */
+}
+
+.obj-overview-reviews {
+    /* background-color: #F8F8F8; */
+    overflow: hidden; /*Cuts off the extra text at the bottom, need js to remove objects if not enough room */
+}
+
+.overview-review-list {
+    list-style-type: none;
+}
+
+.overview-review-list li{
+    margin: 1vh 0 1vh 0;
+}
+
+
+
+/* <------------------ Object Review Overview End---------------> */
+
+/* <------------------ Object Travel Overview Start---------------> */
+.obj-travel-overview{
+    display:grid;
+    grid-template-columns: 4fr 5fr;
+}
+
+.fa-globe{
+    color: lightblue;
+    font-size: 1vw;
+    font-size: calc(10px + .4vw);
+}
+
+.fa-map{
+    color: lightblue;
+    font-size: 1vw;
+    font-size: calc(10px + .4vw);
+}
+
+.fa-map-marker{
+    color: lightblue;
+    font-size: 1vw;
+    font-size: calc(10px + .4vw);
+}
+
+.travel-info > div{
+    margin-top: 2vh;
+}
+
+.travel-info h3 {
+    font-size: 1vw;
+    font-size: calc(10px + .4vw);
+    margin: .75vh 1vw .75vh 1vw;
+    font-weight: 200;
+}
+
+.overview-map{
+    background-color: pink;
+    /*position: fixed;*/
+    position: relative;
+}
+
+.travel-info{
+    overflow: hidden;
+}
+
+/* <------------------ Object Travel Overview End---------------> */
+
+/* <------------------ Object Location Overview Start---------------> */
+
+.obj-location-overview p{
+    margin: 0 1vw 0 1vw;
+    font-size: 1vw;
+    font-size: calc(10px + .4vw);
+}
+
+.obj-location-overview h3{
+    margin: 1vh 1vw 0 1vw;
+    font-size: 1vw;
+    font-size: calc(10px + .4vw);
+    font-weight: 700;
+}
+
+.fa-desktop {
+    color: lightblue;
+    font-size: 1vw;
+    font-size: calc(10px + .4vw);
+}
+
+.fa-clock{
+    color: lightblue;
+    font-size: 1vw;
+    font-size: calc(10px + .4vw);
+}
+
+/* <------------------ Object Location Overview End---------------> */
+
+/* ---------------- Object Overview End ---------------- */
+
+/* ---------------- Submit Review Start ---------------- */
+.obj-reviews{
+    margin-top: 2vh;
+    height: auto;
+    background-color: #f7fbfd;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.submit-review-border{
+    padding: 20px;
+    border: 1px solid grey;
+}
+
+.submit-review-form{
+    height: auto;
+    width: 100%;
+    grid-column: 3 / 15;
+    padding: 3vw;
+    margin-top: 4vh;
+    background-color: white;
+    /* border: 1px solid lightskyblue; */
+}
+
+.submit-review-form  h1 {
+    text-align: center;
+}
+
+.obj-reviews input[type=text],textarea {
+    width: 100%;
+    height: 5vh;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.review-form-item{
+    margin-top: 2vh;
+}
+
+.obj-reviews input[type=submit] {
+    width: 100%;
+    background-color: goldenrod;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#review-description{
+    height: 20vh;
+}
+
+.obj-reviews  input[type=submit]:hover {
+    background-color: gold;
+}
+
+.review-form-item > .star:hover{
+    color: gold;
+}
+
+.review-form-item > .star{
+    color: grey;
+}
+
+/* ---------------- Submit Review End ---------------- */
+
+/* ------------------ Object Reviews Start-------------------- */
+.obj-review{
+    grid-column: 3/15;
+    background-color: white;
+    margin-bottom: 3vh;
+}
+.obj-review-list{
+    padding-top:5vh;
+}
+
+.obj-review-list > li {
+    list-style: none;
+    margin: 2vh 2vw 2vh 2vw;
+    border-bottom: 1px solid lightblue; /* to separate list items, adds line at bottom */
+    padding-bottom: 3vh;
+}
+
+.obj-review-list  p {
+    padding: 1vh 0 1vh 0;
+}
+
+/* ------------------ Object Reviews End-------------------- */
+
+
+
+@media screen and (max-width: 768px){
+
+    /* ----------- media overview start ----------*/
+
+    .obj-overview-content{
+        grid-template-columns: 1fr; /*resizes overview grid to just be one row */
+        grid-template-rows: 2fr 1fr 1fr;
+        height: 100vh;
+    }
+
+    .obj-pictures{
+        grid-column: 1 / -1; /*spans from column line 1 to -1 (last column line */
+        grid-row: 1;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        /* height: 50vh; */
+    }
+
+    .overview-main-image{
+        grid-column: 1 / -1;
+        grid-row: 1;
+        height: 100%;
+        width: 100%;
+    }
+
+    .side-image{
+        display: none;
+    }
+
+    .obj-review-overview {
+        display: none;
+    }
+
+    .obj-travel-overview{
+        grid-column: 1;
+        height: auto;
+    }
+
+    .obv-location-overview{
+        grid-column: 1;
+        grid-row: 1;
+        height: auto;
+    }
+
+    /* ----------- media overview end ----------*/
+}

@@ -1,0 +1,27 @@
+.web-footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: #33383b;
+    color: white;
+    height: 10vh;
+}
+
+.web-footer a{
+    font-size: calc(16px + 1.5vh);
+}
+
+.left-side {
+    float: left;
+}
+
+.right-side a {
+    float: right;
+    margin: 2vh .5vw 2vh .5vw;
+    background-color: gray;
+    padding: 1vh 1vw 1vh 1vw;
+    cursor: pointer;
+}
+
+.right-side a:hover {
+    background-color: darkgray;
+}

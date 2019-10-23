@@ -1,0 +1,191 @@
+/** ---- NEW ---- **/
+
+/* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting
+Code will ensure the list and map text (in the toggle) cannot be highlighted
+*/
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+.map-view{
+    position:fixed; /* Prevents map scrolling */
+    z-index: 1;
+    /*background-image: url("../img/map_big.jpg");*/
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+    transition: 1s; /* Slide in transition time */
+}
+
+#list-view{
+    z-index: 2;
+    position: absolute; /* With respect to landing page */
+    top:90px;
+    right:15px;
+}
+
+
+/* Each search result */
+.list-item{
+    /* 1 x 2 grid*/
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    float:top; /*list items one after another starting at the top */
+    margin: 15px auto;
+    width: 450px;
+    height: 110px;
+    background-color: #547ec2;
+    border-radius: 5px;
+}
+
+.list-item:hover{
+    cursor: pointer;
+}
+
+.item-image{
+    margin: auto;
+    background-image: url("../img/gorge.jpg");
+    background-size: cover;
+    height: 90%;
+    width: 85%
+}
+
+h2 {
+    font-family: "Arial", serif;
+    font-size: 15px;
+    margin: 10px;
+}
+
+p {
+    font-family: "Arial", serif;
+}
+
+.star{
+    font-size: 12px;
+    color: #fec005;
+    float: right;
+    margin-left: 7px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+
+    #list-view > ul{
+        background-color: lightgrey;
+    }
+
+    body{
+        background-color: white;
+    }
+
+    .list-item{
+        top: 80px;
+        width:100%;
+        overflow: hidden;
+    }
+
+    .map-view {
+        position: fixed;
+        z-index: 2;
+        float: left;
+        background-image: url("../img/map_big.jpg");
+        background-position: center;
+        background-size: cover;
+        right: 100%;
+        width: 100%;
+        height: auto;
+        top:80px;
+        bottom:0;
+        transition: 1s;
+    }
+
+    .map-view-enable{
+        right: 0;
+    }
+
+    #list-view{
+        float:left;
+        right:0;
+        top: 20px;
+        padding-bottom: 180px;
+        position: absolute;
+        background-size: cover;
+        width:100%;
+        height:auto;
+    }
+
+
+    #toggle-background{
+        position:fixed;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+
+        background-color: #0b7dda;
+
+        width: 250px;
+        height: 60px;
+        bottom: 10px;
+        /*Horizontal centering*/
+        left:50%;
+        transform: translateX(-50%);
+        border-radius: 30px;
+        z-index: 2;
+    }
+
+    .toggle{
+        display:grid;
+    }
+
+    div.toggle {
+        position:relative;
+        display:grid;
+        background-color: white;
+        height: 50px;
+        width: 100%;
+        border-radius: 25px;
+        margin:auto;
+        transition: 1s;
+    }
+
+    div.toggle:hover{
+        cursor: pointer;
+    }
+
+    .toggle-switch{
+        position: relative;
+        background-color: lightblue;
+        width: 46px;
+        height: 46px;
+        border-radius: 23px;
+        margin-top: auto;
+        margin-bottom: auto;
+        left:3px;
+        transition: 0.5s; /* toggle switch annimation time */
+    }
+
+    /* Moves the toggle switch when enables */
+    .toggle-map{
+        left:34px;
+    }
+
+    p.toggle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/* ------ Code from style.css ------- */
