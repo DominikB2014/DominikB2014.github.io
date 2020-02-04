@@ -1,0 +1,3 @@
+FONTS:
+https://fonts.google.com/specimen/Lato
+https://fonts.google.com/specimen/Titillium+Web

@@ -1,0 +1,106 @@
+/* --------- GLOBAL --------- */
+
+div.page{
+    height:100vh;
+}
+
+/* --------- HOME PAGE --------- */
+div.home{
+    background-image: url("../images/background/AdobeStock_Resize.jpg");
+    background-size: cover;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    border-bottom: white;
+}
+
+h1{
+    color:white;
+    position: absolute;
+    top:15%;
+    left: 5%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 95px;
+    font-weight: 100;
+    z-index: 1;
+    display: none;
+}
+
+/* ---------  NavBar --------- */
+
+a{
+    text-decoration: none;
+    position: relative;
+    font-size: 30px;
+    padding:20px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    vertical-align: middle;
+}
+
+a:visited{
+    color:white;
+}
+
+a:hover{
+    background-color: grey;
+}
+
+ul{
+    position:fixed;
+    top:85vh;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+li{
+    position:relative;
+    float:left; /* Makes NavBar Horizontal */
+    padding: 20px 50px;
+    display: block; /*Removes Bullet Point*/
+}
+
+#navHome{
+    background-image: url("icons/home-white.jpg");
+    background-size: cover;
+}
+
+img{
+    object-fit: scale-down;
+    width: fit-content;
+    height: 30px;
+}
+
+.navBar-current{
+    background-color: blue;
+}
+
+.navBar-current:hover{
+    background-color: blue;
+}
+
+
+/* --------- ABOUT US PAGE --------- */
+
+div.about{
+    background-image: linear-gradient(rgb(30,30,30),grey,lightgray);
+}
+
+
+/* --------- PROJECTS PAGE --------- */
+
+div.projects{
+    background-color: antiquewhite;
+}
+
+
+/* --------- HOBBIES PAGE --------- */
+
+div.hobbies{
+    background-color: coral;
+}
+
+
+/* --------- CONTACT PAGE --------- */
+
+div.contact{
+    background-color: azure;
+}
